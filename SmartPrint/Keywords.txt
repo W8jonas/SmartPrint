@@ -1,0 +1,2 @@
+SmartPrint	KEYWORD1
+SingularPrint	KEYWORD2
