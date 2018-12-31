@@ -13,14 +13,18 @@
 
 class Smart_Print{
    public:
-      Smart_Print(unsigned long bound_rate);
-	  void Speed_comunication(unsigned long bound_rate_2);
-	  void show(String palavra, int time_to_delay, unsigned long bound_rate_2);
-      void show(String palavra, int time_to_delay);
+      Smart_Print(unsigned long delay_pos_print);
+	  void Speed_comunication(unsigned long bound_rate);
+	  
+	  void show(String palavra, long palavra_2, 
+								unsigned long bound_rate);
+      void show(String palavra, long palavra_2);
       void show(String palavra);
       
    private:
-      unsigned long _bound_rate;
+      String _palavra;
+	  long _palavra_2;
+	  unsigned long _delay_pos_print;
 };
 
 #endif
