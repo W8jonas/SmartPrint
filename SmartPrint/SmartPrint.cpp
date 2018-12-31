@@ -8,10 +8,19 @@
 */
 
 #include "Arduino.h"
-
 #include "SmartPrint.h"
 
-SingularPrint::SingularPrint(String palavra){
-  
+SmartPrint::SmartPrint(int bound_rate){
+   _bound_rate = bound_rate;
+   Serial.begin(_bound_rate);
+}
+
+void show(String palavra, int time_to_delay){
+  Serial.println(palavra);
+  delay(time_to_delay);
+}
+
+void show(String palavra){
+  Serial.println(palavra);
 }
 

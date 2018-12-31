@@ -13,13 +13,19 @@
 
 #include "Arduino.h"
 
-class SingularPrint{
+class SmartPrint{
    public:
-      Serial.print(String palavra);
-
+      SmartPrint(int bound_rate);
+      void SingularPrint(String palavra, int time_to_delay);
+      void SingularPrint(String palavra);
+      
    private:
-      String _palavra;
-}
+      String _bound_rate;
+};
 
+void SingularPrint(String palavra, int time_to_delay);
+void SingularPrint(String palavra);
 
 #endif
+
+
