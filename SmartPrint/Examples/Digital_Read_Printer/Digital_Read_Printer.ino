@@ -9,7 +9,7 @@
 
 #include <SmartPrint.h>
 
-SmartPrint console(115200);
+Smart_Print console(115200);
 
 void setup() {
 

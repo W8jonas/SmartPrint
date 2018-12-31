@@ -1,2 +1,4 @@
 SmartPrint	KEYWORD1
-SingularPrint	KEYWORD2
+Smart_Print	KEYWORD2
+show	KEYWORD2
+Speed_comunication	KEYWORD2

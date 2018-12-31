@@ -7,25 +7,21 @@
  * 
 */
 
-#ifndef SmartPrint
-
-#define SmartPrint
-
+#ifndef SmartPrint_n
+#define SmartPrint_n
 #include "Arduino.h"
 
-class SmartPrint{
+class Smart_Print{
    public:
-      SmartPrint(int bound_rate);
-      void SingularPrint(String palavra, int time_to_delay);
-      void SingularPrint(String palavra);
+      Smart_Print(unsigned long bound_rate);
+	  void Speed_comunication(unsigned long bound_rate_2);
+	  void show(String palavra, int time_to_delay, unsigned long bound_rate_2);
+      void show(String palavra, int time_to_delay);
+      void show(String palavra);
       
    private:
-      String _bound_rate;
+      unsigned long _bound_rate;
 };
 
-void SingularPrint(String palavra, int time_to_delay);
-void SingularPrint(String palavra);
-
 #endif
-
 
