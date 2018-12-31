@@ -8,15 +8,15 @@
 */
 
 #include <SmartPrint.h>
-
 Smart_Print console(115200);
 
 void setup() {
-
+console.Speed_comunication(115200);
 }
 
 void loop() {
-  console.show("Hello World!", 500);
-}
 
+  console.show("Hello World!", 500);
+  
+}
 
